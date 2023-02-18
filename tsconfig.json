@@ -1,0 +1,26 @@
+{
+  "include": ["src", "types", "global.d.ts", "src/types/mini.ts"],
+  "compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@root/*": ["./*"],
+			"@/*": ["./src/*"]
+		},
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"lib": ["dom", "esnext"],
+		"resolveJsonModule": true,
+		"importHelpers": false,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"declaration": true,
+		"declarationDir": "./dist/types",
+		"emitDeclarationOnly": true,
+		"outDir": "./dist"
+  }
+}
